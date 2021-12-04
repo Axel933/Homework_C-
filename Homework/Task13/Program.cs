@@ -1,2 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿//Написать программу вычисления значения функции y=f(a)
+double F(double a)
+{
+    return Math.Sin(a);
+}
+double sin = F(3.14);
+Console.WriteLine(sin);
+
+

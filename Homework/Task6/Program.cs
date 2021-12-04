@@ -1,2 +1,10 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿//6. Показать последнюю цифру трёхзначного числа
+void LastNumber(int number)
+{
+    int result = number % 10;
+    Console.WriteLine(result);
+}
+
+LastNumber(356);
+
+
