@@ -1,5 +1,4 @@
-﻿//Игра "Угадай число"
-
+﻿//Игра "Угадай число
 int CreatNumber() //Генерация числа от 1 до 100
 {
     int Number = new Random().Next(1, 101); // Рандомная генерация числа 
@@ -36,10 +35,10 @@ void Rules()  // Правила игры
 }
 
 
-bool MoveGame(int creatNumber, int attempts)
+bool MoveGame(int creatNumber, int attempts) // Тело первого хода. Метод, на вход которого идёт число попыток и загаданное число
 {
-    int numberOfGamer = RequestNumber();
-    if (creatNumber == numberOfGamer)
+    int numberOfGamer = RequestNumber(); //Просьба ввода числа пользователем
+    if (creatNumber == numberOfGamer) 
     {
         Console.WriteLine("Вы угадали число!");
         return true;
@@ -69,7 +68,7 @@ Console.WriteLine();
 int attempts = 5;
 int a = CreatNumber();
 bool result = false;
-while (attempts > 0 && result == false)
+while (attempts > 0 && result == false) // Цикл для игры.
 {
     result = MoveGame(a, attempts);
     attempts = attempts - 1;
