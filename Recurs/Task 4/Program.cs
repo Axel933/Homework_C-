@@ -2,9 +2,9 @@
 
 int Sum(int m, int n)
 {
-    if(m==n) return m;
-    else return m+Sum(m+1,n);
+    if (m == n) return m;
+    else return m + Sum(m + 1, n);
 }
 
 
-Console.WriteLine(Sum(1,4));
+Console.WriteLine(Sum(1, 4));
